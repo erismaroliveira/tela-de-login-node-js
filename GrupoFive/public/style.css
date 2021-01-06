@@ -1,0 +1,13 @@
+#logo {
+    border-radius: 50%;
+    margin-top: 25px;
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#formLogin {
+    margin-top: 25px;
+    margin-bottom: 0%;
+}

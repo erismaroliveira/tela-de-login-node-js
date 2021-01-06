@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Erismar Oliveira">
+    <meta name="generator" content="Grupo Five 0.79.0">
+    <title>Inscreva-se</title>
+
+    
+
+    
+
+    
+<link href="/docs/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <link href="/inscreva.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <a href="/"><button class="btn btn-outline-info"><ion-icon name="arrow-back-outline"></ion-icon><br>Voltar</button></a>
+<main class="form-signin">
+  <form action="/auth/registro" method="POST">
+    <img class="mb-4" src="/img/logoGrupoPreto.png" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Por favor, Inscreva-se</h1>
+    <label for="nome" class="visually-hidden">Nome</label>
+    <input type="text" id="inputNome" name="username" class="form-control" placeholder="Nome de usuário" required autofocus>
+    <label for="email" class="visually-hidden">Endereço de Email</label>
+    <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Endereço de Email" required autofocus>
+    <label for="password" class="visually-hidden">Senha</label>
+    <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Senha" required>
+    <label for="password2" class="visually-hidden">Senha</label>
+    <input type="password" id="inputPassword2" name="password2" class="form-control" placeholder="Confirme a Senha" required>
+    <button class="w-100 btn btn-lg btn-primary" type="submit" id="btn">Inscreva-se</button>
+    <p class="mt-5 mb-3 text-muted">&copy; 2021</p>
+  </form>
+    {{#if message}}
+      <h4 class="alert alert-success mt-4">{{message}}</h4>
+    {{/if}}
+
+    {{#if message_error}}
+      <h4 class="alert alert-danger mt-4">{{message_error}}</h4>
+    {{/if}}
+</main>
+
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  </body>
+</html>
