@@ -5,7 +5,7 @@
 </h1>
 
 ## Description
-  - Página de Login, cadastro Mysql e Autenticação de usuários.
+  - Login page, Mysql registration and User authentication.
 
 ## Knowledges Applied 🚀
  - Node JS
